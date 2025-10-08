@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fwi prediction data</h1>
+    <form action="{{url_for('predict_datapoint')}}" method="post">
+        <input type="text" name="Temperature" placeholder="Temperature" id="" required>
+        <input type="text" name="RH" placeholder="RH" id=""required>
+        <input type="text" name="WS" placeholder="WS" id=""required>
+        <input type="text" name="Rain" placeholder="Rain" id=""required>
+        
+        <input type="text" name="FFMC" placeholder="FFMC" id=""required>
+        <input type="text" name="DMC" placeholder="DMc" id=""required>
+        
+        <input type="text" name="ISI" placeholder="ISi" id=""required>
+        <input type="text" name="Classes" placeholder="Classes" id=""required>
+        <input type="text" name="Region" placeholder="Region" id=""required>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">predict</button>
+    </form>
+    <h2>Prediction is {{results}}</h2>
+    
+</body>
+</html>
